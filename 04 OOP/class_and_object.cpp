@@ -1,12 +1,49 @@
 #include <iostream>
-using namespace std;
-
-class Student
+using  namespace std;
+class Student 
 {
-    public:
-    string name, grade ;
-    int age, roll_number;
+    private:
+    string name,grade;
+    int age ,roll_number;
     
+    public:
+    void setname(string s)
+    {
+        name=s;
+    }
+    
+    void setgrade(string g)
+    {
+        grade=g;
+        
+    }
+    void setage(int a)
+    {
+        age =a;
+    }
+    void setroll_number(int r)
+    {
+        roll_number=r;
+    }
+    
+    void getname()
+    {
+        cout<<"Name:"<<name<<endl;
+        
+    }
+    
+    void getgrade()
+    {
+        cout<<"Grade:"<<grade<<endl;
+    }
+    void getage()
+    {
+        cout<<"Age:"<<age<<endl;
+    }
+    void getroll_number()
+    {
+        cout<<"Roll Number:"<<roll_number<<endl;
+    }
     
     
 };
@@ -14,23 +51,32 @@ class Student
 int main()
 {
     Student S1;
-    S1.name="Rohit ";
-    S1.grade="A+ ";
-    S1.age=20 ;
-    S1.roll_number=1234 ;
-    
-    cout<<S1.name<<endl<<S1.grade<<endl<<S1.age<<" "<<endl<<S1.roll_number<<endl;
+    S1.setname("Rohit");
+    S1.setgrade("A+");
+    S1.setage(20);
+    S1.setroll_number(1234);
     
     
-    Student S2;
-    S2.name="Ahmad";
-    S2.grade="B-";
-    S2.age=12;
-    S2.roll_number=4321;
-    
-    cout<<S2.name<<endl<<S2.grade<<endl<<S2.age<<endl<<S2.roll_number<<endl;
+    S1.getname();
+    S1.getgrade();
+    S1.getage();
+    S1.getroll_number();
     
     return 0;
-
- 
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
